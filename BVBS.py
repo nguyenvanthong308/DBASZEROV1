@@ -411,7 +411,7 @@ def create_pandas_dataframe(data, pset_attributes):
         pandas_data.append(tuple(row))
     df = pd.DataFrame.from_records(pandas_data, columns=attributes)
     df_copy = pd.DataFrame({'直径': [6, 10, 13, 16, 19, 22, 25, 29, 32, 35, 38, 41, 51],
-                   'Model Bar Radius': [3.5, 5.5, 7, 9, 10.5, 12.5, 14, 16.5, 18, 20, 21.5, 23, 29]})
+                   'Model Bar Radius': [3, 5, 6.5, 8, 9.5, 11, 12.5, 14.5, 16, 17.5, 19, 20.5, 25.5]})
     dictionary = dict(zip(df_copy['直径'],df_copy['Model Bar Radius']))
     df['Model Bar Radius'] = df['直径'].map(dictionary)
     DF_sort = df.sort_values(by=['Id'])
