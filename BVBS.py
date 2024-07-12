@@ -381,7 +381,7 @@ def get_objects_data_by_class(file, class_type):
                 "Id": object.id(),
                 "クラス": object.is_a(),
                 "タイプ": object.ObjectType,
-                "直径": object.NominalDiameter,
+                "直径": int(object.NominalDiameter),
                 "切寸": round(object.BarLength),
             }
         )
