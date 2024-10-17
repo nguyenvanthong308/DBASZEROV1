@@ -2045,12 +2045,12 @@ def main():
                         p.setFont('msmincho.ttc', 10)
                         if int(l2) > int(l3):
                             p.drawString(13.4 * 28.3465, (y1 + 1.4) * 28.3465 , l4.rjust(5)) #l1.rjust(5)
-                            p.drawString(12.65 * 28.3465, (y1 + 0.8) * 28.3465 , l3.rjust(5)) #1.rjust(5)
+                            p.drawString(12.7 * 28.3465, (y1 + 0.8) * 28.3465 , l3.rjust(5)) #1.rjust(5)
                             p.drawString(14.1 * 28.3465, (y1 + 0.15) * 28.3465 , l2.center(6)) #l4.center(6)
                             p.drawString(15.55 * 28.3465, (y1 + 0.6) * 28.3465 , l1) #
                         else:
                             p.drawString(13.4 * 28.3465, (y1 + 1.4) * 28.3465 , l1.rjust(5)) #l1.rjust(5)
-                            p.drawString(12.65 * 28.3465, (y1 + 0.8) * 28.3465 , l2.rjust(5)) #1.rjust(5)
+                            p.drawString(12.7 * 28.3465, (y1 + 0.8) * 28.3465 , l2.rjust(5)) #1.rjust(5)
                             p.drawString(14.1 * 28.3465, (y1 + 0.15) * 28.3465 , l3.center(6)) #l4.center(6)
                             p.drawString(15.55 * 28.3465, (y1 + 0.6) * 28.3465 , l4) #
     #TH60   BF2D@Hj@r@i@p1@l11680@n5@e58.11@d13@gSD295@s52@v@a@Gl1500@w90@l1300@w76@l2250@w14@l1680@w14@l2250@w76@l1300@w90@l1500@w0@C82@
