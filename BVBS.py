@@ -1047,8 +1047,26 @@ def main():
                     w1, w2, w3, w4, w5, w6, w7 = process_data1(value001_str)
                     l1, l2, l3, l4, l5, l6, l7 = process_data(value001_str)  
                     ERROR = - 5  
+
+
+            #TH61   BF2D@Hj@r@i@p7@l3790@n8@e30.17@d13@gSD295@s26@v@a@Gl110@w135@l2800@w90@l800@w135@l110@w0@C76@
+                    if count_l == 5 and count_w == 4 and w1=="135" and w2=="90" and w3=="135" and w4=="0":
+                        value001_str = str(value001)  
+                        result = extract_numbers(value001_str)
+                        img_path = image_list[61]
+                        exec(code_string)
+                        if int(l2) > int(l3):
+                            c.drawString(rect_x_position + 140, rect_y_position + 60 + ERROR, l1) #phải
+                            c.drawString(rect_x_position + 75, rect_y_position + 43 + ERROR, l2.center(6))  #dưới
+                            c.drawString(rect_x_position + 8, rect_y_position + 75 + ERROR, l3.rjust(6))  #trái
+                            c.drawString(rect_x_position + 37, rect_y_position + 98 + ERROR, l4.rjust(6)) #trên
+                        else:
+                            c.drawString(rect_x_position + 140, rect_y_position + 60 + ERROR, l4) #phải
+                            c.drawString(rect_x_position + 75, rect_y_position + 43 + ERROR, l3.center(6))  #dưới
+                            c.drawString(rect_x_position + 8, rect_y_position + 75 + ERROR, l2.rjust(6))  #trái
+                            c.drawString(rect_x_position + 37, rect_y_position + 98 + ERROR, l1.rjust(6)) #trên
             #TH60   BF2D@Hj@r@i@p1@l11680@n5@e58.11@d13@gSD295@s52@v@a@Gl1500@w90@l1300@w76@l2250@w14@l1680@w14@l2250@w76@l1300@w90@l1500@w0@C82@
-                    if count_l == 8 and count_w == 7 and w1=="90" and 0 < int(w2) < 90 and 0 < int(w3) < 90 and 0 < int(w4) < 90 and 0 < int(w5) < 90 and w6=="90" and w7=="0":
+                    elif count_l == 8 and count_w == 7 and w1=="90" and 0 < int(w2) < 90 and 0 < int(w3) < 90 and 0 < int(w4) < 90 and 0 < int(w5) < 90 and w6=="90" and w7=="0":
                         value001_str = str(value001)  
                         result = extract_numbers(value001_str)      
                         img_path = image_list[60]
@@ -1069,7 +1087,7 @@ def main():
                         c.drawString(rect_x_position + 115, rect_y_position + 50 + ERROR, l1) #phải trên
                         c.drawString(rect_x_position + 110, rect_y_position + 75 + ERROR, l2) #phải
                         c.drawCentredString(rect_x_position + 96, rect_y_position + 99 + ERROR, l3) #trên
-                        c.drawRightString(rect_x_position + 74, rect_y_position + 81 + ERROR, l4)  #trái 
+                        c.drawRightString(rect_x_position + 74, rect_y_position + 82 + ERROR, l4)  #trái 
                         c.drawRightString(rect_x_position + 65, rect_y_position + 60 + ERROR, l5) #phải trên
             #TH58   BF2D@Hj@r@i@p1@l1480@n1@e2.31@d16@gSD295@s80@v@a@Gl218@w90@l400@w90@l400@w90@l400@w90@l218@w0@PtSEGOPT;o0;o1;o1;o0;o0@C95@
                     elif count_l == 6 and count_w == 5 and w1=="90" and w2=="90" and w3=="90" and w4=="90" and w5=="0" and "PtSEGOPT" in value001:
@@ -1080,7 +1098,7 @@ def main():
                         c.drawString(rect_x_position + 98, rect_y_position + 45 + ERROR, l1) #phải trên
                         c.drawString(rect_x_position + 113, rect_y_position + 75 + ERROR, l2) #phải
                         c.drawCentredString(rect_x_position + 100, rect_y_position + 101 + ERROR, l3) #trên
-                        c.drawRightString(rect_x_position + 77, rect_y_position + 81 + ERROR, l4)  #trái 
+                        c.drawRightString(rect_x_position + 77, rect_y_position + 82 + ERROR, l4)  #trái 
                         c.drawRightString(rect_x_position + 66, rect_y_position + 60 + ERROR, l5) #phải trên
             #TH57   BF2D@Hj@r@i@p1@l1825@n1@e1.02@d10@gSD295@s30@v@a@Gl140@w101@l455@w79@l640@w90@l460@w-90@l200@w0@C96@
                     elif count_l == 6 and count_w == 5 and (90 < int(w1) < 180 and 0 < int(w2) < 90 and w3=="90" and w4=="-90" and w5=="0" or w1=="90" and w2=="-90" and -90 < int(w3) < 0 and -180 < int(w4) < -90  and w5=="0"):
@@ -1510,7 +1528,7 @@ def main():
                         exec(code_string)
                         c.drawString(rect_x_position + 111, rect_y_position + 43 + ERROR, l1) #phải trên
                         c.drawString(rect_x_position + 144, rect_y_position + 63 + ERROR, l2) #phải
-                        c.drawString(rect_x_position + 78, rect_y_position + 81 + ERROR, l3.center(6))  #giữa 
+                        c.drawString(rect_x_position + 78, rect_y_position + 82 + ERROR, l3.center(6))  #giữa 
                         c.drawString(rect_x_position + 9, rect_y_position + 63 + ERROR, l4.rjust(6))  #trái
                         c.drawString(rect_x_position + 40, rect_y_position + 43 + ERROR, l5.rjust(6))  #trái trÊN
             #TH31   BF2D@Hj@r@i@p1@l1202@n1@e0.67@d10@gSD295@s30@v@a@Gl100@w135@l210@w90@l630@w90@l210@w135@l100@w0@C86@
@@ -1556,12 +1574,12 @@ def main():
                         if int(l1) > int(l4):
                             c.drawString(rect_x_position + 8, rect_y_position + 57 + ERROR, l4.rjust(6))  #trái
                             c.drawString(rect_x_position + 36, rect_y_position + 73 + ERROR, l3.rjust(6))  #dưới
-                            c.drawString(rect_x_position + 75, rect_y_position + 81 + ERROR, l2) #phải
+                            c.drawString(rect_x_position + 75, rect_y_position + 82 + ERROR, l2) #phải
                             c.drawString(rect_x_position + 90, rect_y_position + 104 + ERROR, l1.rjust(6)) #trên 
                         else:
                             c.drawString(rect_x_position + 8, rect_y_position + 57 + ERROR, l1.rjust(6))  #trái
                             c.drawString(rect_x_position + 36, rect_y_position + 73 + ERROR, l2.rjust(6))  #dưới
-                            c.drawString(rect_x_position + 75, rect_y_position + 81 + ERROR, l3) #phải
+                            c.drawString(rect_x_position + 75, rect_y_position + 82 + ERROR, l3) #phải
                             c.drawString(rect_x_position + 90, rect_y_position + 104 + ERROR, l4.rjust(6)) #trên 
             #TH27   BF2D@Hj@r@i@p1@l1204@n1@e1.2@d13@gSD295@s39@v@a@Gl350@w90@l300@w90@l280@w-90@l350@w0@C69@
                     elif count_l == 5 and count_w == 4 and (w1=="90" and w2=="90" and w3=="-90" and w4=="0" or w1=="90" and w2=="-90" and w3=="-90" and w4=="0"):
@@ -1602,7 +1620,7 @@ def main():
                         img_path = image_list[25]
                         exec(code_string)
                         c.drawString(rect_x_position + 22, rect_y_position + 58 + ERROR, l1.rjust(6))  #trái
-                        c.drawString(rect_x_position + 78, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                        c.drawString(rect_x_position + 78, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                         c.drawString(rect_x_position + 130, rect_y_position + 90 + ERROR, l3) #phải
             #TH24   BF2D@Hj@r@i@p1@l1987@n1@e6.04@d22@gSD345@s88@v@a@Gl204@w180@l1500@w-180@l204@w0@C83@
                     elif count_l == 4 and count_w == 3 and w1=="180" and w2=="-180" and w3=="0":
@@ -1611,7 +1629,7 @@ def main():
                         img_path = image_list[24]
                         exec(code_string)
                         c.drawString(rect_x_position + 41, rect_y_position + 105 + ERROR, l1.rjust(6))  #trái
-                        c.drawString(rect_x_position + 75, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                        c.drawString(rect_x_position + 75, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                         c.drawString(rect_x_position + 109, rect_y_position + 43 + ERROR, l3) #phải
             #TH23   BF2D@Hj@r@i@p1@l1961@n1@e3.06@d16@gSD295@s80@v@a@Gl450@w67@l1050@w-67@l500@w0@C83@
                     elif count_l == 4 and count_w == 3 and 0 < int(w1) < 90 and -90 < int(w2) < 0 and w3=="0":
@@ -1629,7 +1647,7 @@ def main():
                         img_path = image_list[22]
                         exec(code_string)
                         c.drawString(rect_x_position + 8, rect_y_position + 86 + ERROR, l1.rjust(6))  #trái
-                        c.drawString(rect_x_position + 77, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                        c.drawString(rect_x_position + 77, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                         c.drawString(rect_x_position + 142, rect_y_position + 63 + ERROR, l3) #phải
             #TH21   BF2D@Hj@r@i@p1@l1644@n1@e2.56@d16@gSD295@s80@v@a@Gl154@w135@l1300@w-45@l200@w0@C77@
                     elif count_l == 4 and count_w == 3 and (90 < int(w1) < 180 and -90 < int(w2) < 0 and w3=="0" or 0 < int(w1) < 90 and -180 < int(w2) < -90 and w3=="0"):
@@ -1667,11 +1685,11 @@ def main():
                         exec(code_string)
                         if w1=="180":
                             c.drawString(rect_x_position + 110, rect_y_position + 105 + ERROR, l1) #phải
-                            c.drawString(rect_x_position + 82, rect_y_position + 81 + ERROR, l2.center(6))  #giữa
+                            c.drawString(rect_x_position + 82, rect_y_position + 82 + ERROR, l2.center(6))  #giữa
                             c.drawString(rect_x_position + 21, rect_y_position + 66 + ERROR, l3.rjust(6))  #trái 
                         else:
                             c.drawString(rect_x_position + 110, rect_y_position + 105 + ERROR, l3) #phải
-                            c.drawString(rect_x_position + 82, rect_y_position + 81 + ERROR, l2.center(6))  #giữa
+                            c.drawString(rect_x_position + 82, rect_y_position + 82 + ERROR, l2.center(6))  #giữa
                             c.drawString(rect_x_position + 21, rect_y_position + 66 + ERROR, l1.rjust(6))  #trái 
             #TH18   BF2D@Hj@r@i@p1@l2441@n1@e7.42@d22@gSD345@s88@v@a@Gl204@w180@l2000@w45@l210@w0@C66@
                     elif count_l == 4 and count_w == 3 and (w1=="180" and 0 < int(w2) < 90 and w3=="0" or 0 < int(w1) < 90 and w2=="180" and w3=="0"):
@@ -1709,11 +1727,11 @@ def main():
                         exec(code_string)
                         if w1=="180":
                             c.drawString(rect_x_position + 110, rect_y_position + 105 + ERROR, l1)  #trái
-                            c.drawString(rect_x_position + 80, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                            c.drawString(rect_x_position + 80, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                             c.drawString(rect_x_position + 21, rect_y_position + 58 + ERROR, l3.rjust(6)) #phải
                         else:
                             c.drawString(rect_x_position + 110, rect_y_position + 105 + ERROR, l3)  #trái
-                            c.drawString(rect_x_position + 80, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                            c.drawString(rect_x_position + 80, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                             c.drawString(rect_x_position + 21, rect_y_position + 58 + ERROR, l1.rjust(6)) #phải
             #TH15   BF2D@Hj@r@i@p1@l1278@n1@e1.99@d16@gSD295@s80@v@a@Gl218@w90@l900@w-135@l200@w0@C78@
                     elif count_l == 4 and count_w == 3 and (w1=="90" and -180 < int(w2) < -90 and w3=="0" or 90 < int(w1) < 180 and w2=="-90" and w3=="0"):
@@ -1737,11 +1755,11 @@ def main():
                         exec(code_string)
                         if w1=="90":
                             c.drawString(rect_x_position + 8, rect_y_position + 62 + ERROR, l1.rjust(6))  #trái
-                            c.drawString(rect_x_position + 65, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                            c.drawString(rect_x_position + 65, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                             c.drawString(rect_x_position + 127, rect_y_position + 80 + ERROR, l3) #phải
                         else:
                             c.drawString(rect_x_position + 8, rect_y_position + 62 + ERROR, l3.rjust(6))  #trái
-                            c.drawString(rect_x_position + 65, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                            c.drawString(rect_x_position + 65, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                             c.drawString(rect_x_position + 127, rect_y_position + 80 + ERROR, l1) #phải
             #TH13   BF2D@Hj@r@i@p1@l2128@n1@e4.79@d19@gSD345@s114@v@a@Gl268@w90@l1700@w-180@l154@w0@C73@
                     elif count_l == 4 and count_w == 3 and (w1=="90" and w2=="-180" and w3=="0" or w1=="180" and w2=="-90" and w3=="0"):
@@ -1751,11 +1769,11 @@ def main():
                         exec(code_string)
                         if  w1=="90":
                             c.drawString(rect_x_position + 8, rect_y_position + 62 + ERROR, l1.rjust(6))  #trái
-                            c.drawString(rect_x_position + 75, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                            c.drawString(rect_x_position + 75, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                             c.drawString(rect_x_position + 110, rect_y_position + 105 + ERROR, l3) #phải
                         else:
                             c.drawString(rect_x_position + 8, rect_y_position + 62 + ERROR, l3.rjust(6))  #trái
-                            c.drawString(rect_x_position + 75, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                            c.drawString(rect_x_position + 75, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                             c.drawString(rect_x_position + 110, rect_y_position + 105 + ERROR, l1) #phải
             #TH12   BF2D@Hj@r@i@p1@l2248@n1@e3.51@d16@gSD295@s80@v@a@Gl218@w90@l1800@w135@l270@w0@C80@
                     elif count_l == 4 and count_w == 3 and (w1 == "90" and 90 < int(w2) < 180 and w3 == "0" or 90 < int(w1) < 180 and w2 == "90" and w3 == "0"):
@@ -1806,7 +1824,7 @@ def main():
                         img_path = image_list[9]
                         exec(code_string)
                         c.drawString(rect_x_position + 21, rect_y_position + 58 + ERROR, l1.rjust(6))  #trái
-                        c.drawString(rect_x_position + 77, rect_y_position + 81 + ERROR, l2.center(6))  #giữa           
+                        c.drawString(rect_x_position + 77, rect_y_position + 82 + ERROR, l2.center(6))  #giữa           
                         c.drawString(rect_x_position + 130, rect_y_position + 58 + ERROR, l3) #phải
             #TH8    BF2D@Hj@r@i@p1@l2117@n1@e4.76@d19@gSD345@s114@v@a@Gl398@w85@l1509@w45@l265@w0@C89@
                     elif count_l == 4 and count_w == 3 and 0 < int(w1) < 90 and 0 < int(w2) < 90 and w3=="0":
@@ -1815,7 +1833,7 @@ def main():
                         img_path = image_list[8]
                         exec(code_string)
                         c.drawString(rect_x_position + 21, rect_y_position + 66 + ERROR, l1.rjust(6))  #trái
-                        c.drawString(rect_x_position + 75, rect_y_position + 81 + ERROR, l2.center(6))  #giữa
+                        c.drawString(rect_x_position + 75, rect_y_position + 82 + ERROR, l2.center(6))  #giữa
                         c.drawString(rect_x_position + 130, rect_y_position + 66 + ERROR, l3) #phải
             #TH7 BF2D@Hj@r@i@p1@l2300@n1@e1.29@d10@gSD295@s30@v@a@Gl87@w180@l2100@w180@l87@w0@C79@
                     elif count_l == 4 and count_w == 3 and w1=="180" and w2=="180" and w3=="0":
@@ -1833,8 +1851,8 @@ def main():
                         img_path = image_list[6]
                         exec(code_string)
                         c.drawString(rect_x_position + 8, rect_y_position + 63 + ERROR, l1.rjust(6))  #trái
-                        c.drawString(rect_x_position + 78, rect_y_position + 81 + ERROR, l2.center(6))  #giữa
-                        c.drawString(rect_x_position + 142, rect_y_position + 63 + ERROR, l3) #phải 
+                        c.drawString(rect_x_position + 78, rect_y_position + 82 + ERROR, l2.center(6))  #giữa
+                        c.drawString(rect_x_position + 144, rect_y_position + 63 + ERROR, l3) #phải 
             #TH5    BF2D@Hj@r@i@p1@l1057@n1@e1.05@d13@gSD295@s39@v@a@Gl111@w135@l950@w0@C77@    
                     elif count_l == 3 and count_w == 2 and 90 < int(w1) < 180 and int(w2) == 0: 
                         value001_str = str(value001)  
@@ -1855,10 +1873,10 @@ def main():
                         exec(code_string)
                         if int(l1) > int(l2):
                             c.drawString(rect_x_position + 23, rect_y_position + 67 + ERROR, l2.rjust(6))
-                            c.drawString(rect_x_position + 85, rect_y_position + 81 + ERROR, l1.center(6))
+                            c.drawString(rect_x_position + 85, rect_y_position + 82 + ERROR, l1.center(6))
                         else:
                             c.drawString(rect_x_position + 23, rect_y_position + 67 + ERROR, l1.rjust(6))
-                            c.drawString(rect_x_position + 85, rect_y_position + 81 + ERROR, l2.center(6))                  
+                            c.drawString(rect_x_position + 85, rect_y_position + 82 + ERROR, l2.center(6))                  
             #TH3    BF2D@Hj@r@i@p1@l1744@n1@e5.3@d22@gSD345@s88@v@a@Gl204@w180@l1500@w0@C77@    
                     elif count_l == 3 and count_w == 2 and w1=="180" and w2=="0": 
                         value001_str = str(value001)  
@@ -1879,10 +1897,10 @@ def main():
                         exec(code_string)
                         if int(l1) > int(l2):
                             c.drawString(rect_x_position + 8, rect_y_position + 62 + ERROR, l2.rjust(6))
-                            c.drawString(rect_x_position + 79, rect_y_position + 81 + ERROR, l1.center(6))
+                            c.drawString(rect_x_position + 79, rect_y_position + 82 + ERROR, l1.center(6))
                         else:
                             c.drawString(rect_x_position + 8, rect_y_position + 62 + ERROR, l1.rjust(6))
-                            c.drawString(rect_x_position + 79, rect_y_position + 81 + ERROR, l2.center(6))
+                            c.drawString(rect_x_position + 79, rect_y_position + 82 + ERROR, l2.center(6))
             #TH1    BF2D@Hj@r@i@p1@l2250@n1@e14.02@d32@gSD390@s@v@a@Gl2250@w0@C83@
                     elif count_l == 2 and count_w == 1 and w1=="0":                         
 
@@ -1890,7 +1908,7 @@ def main():
                         result = extract_numbers(value001_str)
                         img_path = image_list[1]
                         exec(code_string)
-                        c.drawString(rect_x_position + 79, rect_y_position + 81 + ERROR, l1.center(6))
+                        c.drawString(rect_x_position + 79, rect_y_position + 82 + ERROR, l1.center(6))
             #TH0
                     else:
                         value001_str = str(value001) 
@@ -2019,8 +2037,24 @@ def main():
                     w1, w2, w3, w4, w5, w6, w7 = process_data1(value001_str)
                     result = extract_numbers(value001_str)
                     l1, l2, l3, l4, l5, l6, l7 = process_data(value001_str)
+
+    #TH61   BF2D@Hj@r@i@p7@l3790@n8@e30.17@d13@gSD295@s26@v@a@Gl110@w135@l2800@w90@l800@w135@l110@w0@C76@
+                    if count_l == 5 and count_w == 4 and w1=="135" and w2=="90" and w3=="135" and w4=="0":
+                        img_path = image_list[61]
+                        exec(code_string2) 
+                        p.setFont('msmincho.ttc', 10)
+                        if int(l2) > int(l3):
+                            p.drawString(13.4 * 28.3465, (y1 + 1.4) * 28.3465 , l4.rjust(5)) #l1.rjust(5)
+                            p.drawString(12.65 * 28.3465, (y1 + 0.8) * 28.3465 , l3.rjust(5)) #1.rjust(5)
+                            p.drawString(14.1 * 28.3465, (y1 + 0.15) * 28.3465 , l2.center(6)) #l4.center(6)
+                            p.drawString(15.55 * 28.3465, (y1 + 0.6) * 28.3465 , l1) #
+                        else:
+                            p.drawString(13.4 * 28.3465, (y1 + 1.4) * 28.3465 , l1.rjust(5)) #l1.rjust(5)
+                            p.drawString(12.65 * 28.3465, (y1 + 0.8) * 28.3465 , l2.rjust(5)) #1.rjust(5)
+                            p.drawString(14.1 * 28.3465, (y1 + 0.15) * 28.3465 , l3.center(6)) #l4.center(6)
+                            p.drawString(15.55 * 28.3465, (y1 + 0.6) * 28.3465 , l4) #
     #TH60   BF2D@Hj@r@i@p1@l11680@n5@e58.11@d13@gSD295@s52@v@a@Gl1500@w90@l1300@w76@l2250@w14@l1680@w14@l2250@w76@l1300@w90@l1500@w0@C82@
-                    if count_l == 8 and count_w == 7 and w1=="90" and 0 < int(w2) < 90 and 0 < int(w3) < 90 and 0 < int(w4) < 90 and 0 < int(w5) < 90 and w6=="90" and w7=="0":
+                    elif count_l == 8 and count_w == 7 and w1=="90" and 0 < int(w2) < 90 and 0 < int(w3) < 90 and 0 < int(w4) < 90 and 0 < int(w5) < 90 and w6=="90" and w7=="0":
                         img_path = image_list[60]
                         exec(code_string2)
                         p.setFont('msmincho.ttc', 10)
@@ -2895,6 +2929,7 @@ def main():
                 "image/58.png",
                 "image/59.png",
                 "image/60.png",
+                "image/61.png",
             ]
             st.subheader(' ', divider='rainbow')
             #st.write("------------------------------------------------------")
