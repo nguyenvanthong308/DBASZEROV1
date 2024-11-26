@@ -11,3 +11,4 @@ datetime==5.5
 fpdf==1.7.2
 pytz==2024.1
 streamlit-aggrid==0.3.4
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
