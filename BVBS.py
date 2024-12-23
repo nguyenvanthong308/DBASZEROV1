@@ -1035,11 +1035,13 @@ def main():
                     # Thêm văn bản "NO" và số thứ tự vào hình chữ nhật
                     c.setFont('msmincho.ttc', 15)
                     c.drawString(rect_x_position + 10, rect_y_position + 8, f'No.{no}')
+                    
                     if タイプ_OFF:
-                        c.setFont('msmincho.ttc', 14) #2024/12/23 
-                        c.drawString(rect_x_position + 9, rect_y_position + 23, タイプ) #2024/12/23
+                        c.setFont('msmincho.ttc', 14) #2024_12_23
+                        c.drawString(rect_x_position + 9, rect_y_position + 23, タイプ) #2024_12_23
                     else:
-                        c.drawString(rect_x_position + 9, rect_y_position + 23, "") #2024/12/23
+                        c.drawString(rect_x_position + 9, rect_y_position + 23, "") #2024_12_23
+
                     value001_str = str(value001)
                     count_l = value001.count('l')
                     count_w = value001.count('w')
